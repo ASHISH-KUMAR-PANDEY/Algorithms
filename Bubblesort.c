@@ -6,3 +6,7 @@ int main(){
 
    printf("How many numbers are u going to enter?: ");
    scanf("%d",&count);
+ printf("Enter %d numbers: ",count);
+
+   for(i=0;i<count;i++)
+   scanf("%d",&number[i]);

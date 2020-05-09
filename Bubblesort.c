@@ -10,3 +10,12 @@ int main(){
 
    for(i=0;i<count;i++)
    scanf("%d",&number[i]);
+for(i=count-2;i>=0;i--){
+      for(j=0;j<=i;j++){
+        if(number[j]>number[j+1]){
+           temp=number[j];
+           number[j]=number[j+1];
+           number[j+1]=temp;
+        }
+      }
+   }

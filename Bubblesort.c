@@ -19,3 +19,9 @@ for(i=count-2;i>=0;i--){
         }
       }
    }
+   printf("Sorted elements: ");
+   for(i=0;i<count;i++)
+      printf(" %d",number[i]);
+
+   return 0;
+}

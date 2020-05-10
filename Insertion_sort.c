@@ -17,3 +17,9 @@ printf("Enter %d elements: ", count);
       }
       number[j+1]=temp;
    }
+ printf("Order of Sorted elements: ");
+   for(i=0;i<count;i++)
+      printf(" %d",number[i]);
+
+   return 0;
+}

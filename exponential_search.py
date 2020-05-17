@@ -1,27 +1,17 @@
-# Python program to find an element x 
-# in a sorted array using Exponential Search 
-  
-# A recurssive binary search function returns  
-# location  of x in given array arr[l..r] is  
-# present, otherwise -1 
+
 def binarySearch( arr, l, r, x): 
     if r >= l: 
         mid = l + ( r-l ) / 2
           
-        # If the element is present at  
-        # the middle itself 
         if arr[mid] == x: 
             return mid 
           
-        # If the element is smaller than mid,  
-        # then it can only be present in the  
-        # left subarray 
         if arr[mid] > x: 
             return binarySearch(arr, l,  
                                 mid - 1, x) 
           
         # Else he element can only be 
-        # present in the right 
+
         return binarySearch(arr, mid + 1, r, x) 
           
     # We reach here if the element is not present 

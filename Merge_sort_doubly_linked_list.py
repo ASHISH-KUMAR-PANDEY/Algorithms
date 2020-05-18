@@ -1,6 +1,4 @@
-# Program for merge sort on doubly linked list 
-  
-# A node of the doublly linked list 
+
 class Node: 
       
     # Constructor to create a new node 

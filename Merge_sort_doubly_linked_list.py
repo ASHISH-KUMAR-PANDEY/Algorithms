@@ -1,26 +1,16 @@
 
 class Node: 
-      
-    # Constructor to create a new node 
     def __init__(self, data): 
         self.data = data  
         self.next = None
         self.prev = None
   
 class DoublyLinkedList: 
-  
-     # Constructor for empty Doubly Linked List 
     def __init__(self): 
         self.head = None
-  
-    # Function to merge two linked list 
     def merge(self, first, second): 
-          
-        # If first linked list is empty 
         if first is None: 
             return second  
-          
-        # If secon linked list is empty  
         if second is None: 
             return first 
   

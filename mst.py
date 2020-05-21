@@ -32,11 +32,6 @@ class Graph():
         for cout in range(self.V): 
             u = self.minKey(key, mstSet) 
             mstSet[u] = True
-  
-            # Update dist value of the adjacent vertices  
-            # of the picked vertex only if the current  
-            # distance is greater than new distance and 
-            # the vertex in not in the shotest path tree 
             for v in range(self.V): 
                 # graph[u][v] is non zero only for adjacent vertices of m 
                 # mstSet[v] is false for vertices not yet included in MST 

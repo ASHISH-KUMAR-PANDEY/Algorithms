@@ -11,9 +11,7 @@ class Graph():
         for i in range(1, self.V): 
             print parent[i], "-", i, "\t", self.graph[i][ parent[i] ] 
             
-    def minKey(self, key, mstSet): 
-  
-        # Initilaize min value 
+    def minKey(self, key, mstSet):  
         min = sys.maxint 
   
         for v in range(self.V): 

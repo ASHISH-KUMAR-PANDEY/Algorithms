@@ -10,10 +10,7 @@ class Graph():
         print "Edge \tWeight"
         for i in range(1, self.V): 
             print parent[i], "-", i, "\t", self.graph[i][ parent[i] ] 
-  
-    # A utility function to find the vertex with  
-    # minimum distance value, from the set of vertices  
-    # not yet included in shortest path tree 
+            
     def minKey(self, key, mstSet): 
   
         # Initilaize min value 

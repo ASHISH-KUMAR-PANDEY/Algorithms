@@ -22,8 +22,6 @@ class Graph():
         return min_index 
   
     def primMST(self): 
-  
-        # Key values used to pick minimum weight edge in cut 
         key = [sys.maxint] * self.V 
         parent = [None] * self.V # Array to store constructed MST 
         # Make key 0 so that this vertex is picked as first vertex 

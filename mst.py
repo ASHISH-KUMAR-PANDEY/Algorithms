@@ -30,14 +30,7 @@ class Graph():
         parent[0] = -1 
   
         for cout in range(self.V): 
-  
-            # Pick the minimum distance vertex from  
-            # the set of vertices not yet processed.  
-            # u is always equal to src in first iteration 
             u = self.minKey(key, mstSet) 
-  
-            # Put the minimum distance vertex in  
-            # the shortest path tree 
             mstSet[u] = True
   
             # Update dist value of the adjacent vertices  

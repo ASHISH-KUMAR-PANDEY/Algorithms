@@ -23,12 +23,11 @@ class Graph():
   
     def primMST(self): 
         key = [sys.maxint] * self.V 
-        parent = [None] * self.V # Array to store constructed MST 
-        # Make key 0 so that this vertex is picked as first vertex 
+        parent = [None] * self.V
         key[0] = 0 
         mstSet = [False] * self.V 
   
-        parent[0] = -1 # First node is always the root of 
+        parent[0] = -1 
   
         for cout in range(self.V): 
   

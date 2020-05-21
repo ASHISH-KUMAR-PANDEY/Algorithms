@@ -21,8 +21,6 @@ class Graph():
   
         return min_index 
   
-    # Function to construct and print MST for a graph  
-    # represented using adjacency matrix representation 
     def primMST(self): 
   
         # Key values used to pick minimum weight edge in cut 

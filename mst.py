@@ -1,4 +1,4 @@
-import sys # Library for INT_MAX 
+import sys 
   
 class Graph(): 
   
@@ -6,8 +6,6 @@ class Graph():
         self.V = vertices 
         self.graph = [[0 for column in range(vertices)]  
                     for row in range(vertices)] 
-  
-    # A utility function to print the constructed MST stored in parent[] 
     def printMST(self, parent): 
         print "Edge \tWeight"
         for i in range(1, self.V): 

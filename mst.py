@@ -33,9 +33,6 @@ class Graph():
             u = self.minKey(key, mstSet) 
             mstSet[u] = True
             for v in range(self.V): 
-                # graph[u][v] is non zero only for adjacent vertices of m 
-                # mstSet[v] is false for vertices not yet included in MST 
-                # Update the key only if graph[u][v] is smaller than key[v] 
                 if self.graph[u][v] > 0 and mstSet[v] == False and key[v] > self.graph[u][v]: 
                         key[v] = self.graph[u][v] 
                         parent[v] = u 

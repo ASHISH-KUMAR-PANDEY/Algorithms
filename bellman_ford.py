@@ -15,11 +15,7 @@ class Graph:
     def BellmanFord(self, src):   
         dist = [float("Inf")] * self.V  
         dist[src] = 0
-  
-  
-        # Step 2: Relax all edges |V| - 1 times. A simple shortest  
-        # path from src to any other vertex can have at-most |V| - 1  
-        # edges  
+ 
         for _ in range(self.V - 1):  
             for u, v, w in self.graph:  
                 if dist[u] != float("Inf") and dist[u] + w < dist[v]:  

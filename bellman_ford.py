@@ -28,17 +28,10 @@ class Graph:
                 if dist[u] != float("Inf") and dist[u] + w < dist[v]:  
                         dist[v] = dist[u] + w  
   
-        # Step 3: check for negative-weight cycles. The above step  
-        # guarantees shortest distances if graph doesn't contain  
-        # negative weight cycle. If we get a shorter path, then there  
-        # is a cycle.  
-  
         for u, v, w in self.graph:  
                 if dist[u] != float("Inf") and dist[u] + w < dist[v]:  
                         print("Graph contains negative weight cycle") 
                         return
-                          
-        # print all distance  
         self.printArr(dist)  
   
 g = Graph(5)  
@@ -50,6 +43,5 @@ g.addEdge(1, 4, 2)
 g.addEdge(3, 2, 5)  
 g.addEdge(3, 1, 1)  
 g.addEdge(4, 3, -3)  
-  
-# Print the solution  
+
 g.BellmanFord(0)

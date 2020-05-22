@@ -1,30 +1,18 @@
-# Python3 program for Bellman-Ford's single source  
-# shortest path algorithm.  
-  
-# Class to represent a graph  
 class Graph:  
   
     def __init__(self, vertices):  
-        self.V = vertices # No. of vertices  
+        self.V = vertices
         self.graph = []  
   
-    # function to add an edge to graph  
     def addEdge(self, u, v, w):  
         self.graph.append([u, v, w])  
           
-    # utility function used to print the solution  
     def printArr(self, dist):  
         print("Vertex Distance from Source")  
         for i in range(self.V):  
             print("{0}\t\t{1}".format(i, dist[i]))  
-      
-    # The main function that finds shortest distances from src to  
-    # all other vertices using Bellman-Ford algorithm. The function  
-    # also detects negative weight cycle  
-    def BellmanFord(self, src):  
-  
-        # Step 1: Initialize distances from src to all other vertices  
-        # as INFINITE  
+ 
+    def BellmanFord(self, src):   
         dist = [float("Inf")] * self.V  
         dist[src] = 0
   

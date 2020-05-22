@@ -21,9 +21,6 @@ class Graph:
         # path from src to any other vertex can have at-most |V| - 1  
         # edges  
         for _ in range(self.V - 1):  
-            # Update dist value and parent index of the adjacent vertices of  
-            # the picked vertex. Consider only those vertices which are still in  
-            # queue  
             for u, v, w in self.graph:  
                 if dist[u] != float("Inf") and dist[u] + w < dist[v]:  
                         dist[v] = dist[u] + w  

@@ -1,12 +1,7 @@
 import math 
   
 def jumpSearch( arr , x , n ): 
-      
-    # Finding block size to be jumped 
     step = math.sqrt(n) 
-      
-    # Finding the block where element is 
-    # present (if it is present) 
     prev = 0
     while arr[int(min(step, n)-1)] < x: 
         prev = step 

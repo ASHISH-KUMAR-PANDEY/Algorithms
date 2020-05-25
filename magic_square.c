@@ -17,22 +17,19 @@ void generateSquare(int n)
         { 
             if (j == n) 
                 j = 0; 
-  
-            // 1st condition helper if next number  
-            // is goes to out of square's upper side 
             if (i < 0) 
                 i=n-1; 
         } 
-        if (magicSquare[i][j]) //2nd condition 
+        if (magicSquare[i][j])
         { 
             j -= 2; 
             i++; 
             continue; 
         } 
         else
-            magicSquare[i][j] = num++; //set number 
+            magicSquare[i][j] = num++;
   
-        j++; i--; //1st condition 
+        j++; i--;
     } 
   
     // Print magic square 

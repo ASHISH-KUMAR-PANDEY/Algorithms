@@ -31,8 +31,6 @@ void generateSquare(int n)
   
         j++; i--;
     } 
-  
-    // Print magic square 
     printf("The Magic Square for n=%d:\nSum of "
        "each row or column %d:\n\n",  n, n*(n*n+1)/2); 
     for (i=0; i<n; i++) 
@@ -42,11 +40,9 @@ void generateSquare(int n)
         printf("\n"); 
     } 
 } 
-  
-// Driver program to test above function 
 int main() 
 { 
-    int n = 7; // Works only when n is odd 
+    int n = 7;
     generateSquare (n); 
     return 0; 
 } 

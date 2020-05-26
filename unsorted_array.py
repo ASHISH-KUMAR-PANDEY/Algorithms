@@ -1,27 +1,14 @@
-# Python3 implementation of randomized  
-# quickSelect  
 import random 
+def kthSmallest(arr, l, r, k):
   
-# This function returns k'th smallest  
-# element in arr[l..r] using QuickSort 
-# based method. ASSUMPTION: ELEMENTS 
-# IN ARR[] ARE DISTINCT  
-def kthSmallest(arr, l, r, k): 
-      
-    # If k is smaller than number of 
-    # elements in array  
     if (k > 0 and k <= r - l + 1): 
-          
-        # Partition the array around a random  
-        # element and get position of pivot  
-        # element in sorted array  
+      
         pos = randomPartition(arr, l, r)  
   
-        # If position is same as k  
         if (pos - l == k - 1):  
             return arr[pos]  
-        if (pos - l > k - 1): # If position is more,  
-                            # recur for left subarray  
+        if (pos - l > k - 1): 
+          
             return kthSmallest(arr, l, pos - 1, k)  
   
         # Else recur for right subarray  

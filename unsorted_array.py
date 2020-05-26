@@ -11,12 +11,9 @@ def kthSmallest(arr, l, r, k):
           
             return kthSmallest(arr, l, pos - 1, k)  
   
-        # Else recur for right subarray  
         return kthSmallest(arr, pos + 1, r,  
                            k - pos + l - 1) 
   
-    # If k is more than the number of  
-    # elements in the array  
     return 999999999999
   
 def swap(arr, a, b): 
@@ -24,11 +21,6 @@ def swap(arr, a, b):
     arr[a] = arr[b] 
     arr[b] = temp 
   
-# Standard partition process of QuickSort().  
-# It considers the last element as pivot and 
-# moves all smaller element to left of it and  
-# greater elements to right. This function 
-# is used by randomPartition()  
 def partition(arr, l, r): 
     x = arr[r] 
     i = l 
@@ -39,16 +31,12 @@ def partition(arr, l, r):
     swap(arr, i, r)  
     return i 
   
-# Picks a random pivot element between l and r  
-# and partitions arr[l..r] around the randomly 
-# picked element using partition()  
 def randomPartition(arr, l, r): 
     n = r - l + 1
     pivot = int(random.random() % n)  
     swap(arr, l + pivot, r)  
     return partition(arr, l, r) 
   
-# Driver Code 
 if __name__ == '__main__': 
   
     arr = [12, 3, 5, 7, 4, 19, 26]  

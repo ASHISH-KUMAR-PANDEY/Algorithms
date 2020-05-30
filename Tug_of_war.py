@@ -56,8 +56,7 @@ def tugOfWar(arr, n):
     # function TOWUtil()  
     TOWUtil(arr, n, curr_elements, 0,  
             soln, min_diff, Sum, 0, 0)  
-  
-    # Print the solution  
+
     print("The first subset is: ") 
     for i in range(n): 
         if (soln[i] == True): 

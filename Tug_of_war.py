@@ -29,11 +29,7 @@ def TOWUtil(arr, n, curr_elements, no_of_selected_elements,
     curr_elements[curr_position] = False
  
 def tugOfWar(arr, n): 
-      
-    # the boolean array that contains the  
-    # inclusion and exclusion of an element  
-    # in current set. The number excluded  
-    # automatically form the other set  
+ 
     curr_elements = [None] * n  
   
     # The inclusion/exclusion array 

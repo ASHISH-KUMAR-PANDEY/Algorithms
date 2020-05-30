@@ -31,9 +31,7 @@ def TOWUtil(arr, n, curr_elements, no_of_selected_elements,
 def tugOfWar(arr, n): 
  
     curr_elements = [None] * n  
-  
-    # The inclusion/exclusion array 
-    # for final solution  
+
     soln = [None] * n  
   
     min_diff = [999999999999]  

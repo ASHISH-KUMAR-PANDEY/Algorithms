@@ -10,8 +10,7 @@ def TOWUtil(arr, n, curr_elements, no_of_selected_elements,
 
     TOWUtil(arr, n, curr_elements, no_of_selected_elements,  
             soln, min_diff, Sum, curr_sum, curr_position + 1)  
-  
-    # add the current element to the solution  
+   
     no_of_selected_elements += 1
     curr_sum = curr_sum + arr[curr_position]  
     curr_elements[curr_position] = True

@@ -71,7 +71,7 @@ def tugOfWar(arr, n):
         if (soln[i] == False): 
             print(arr[i], end = " ") 
   
-# Driver Code 
+
 if __name__ == '__main__': 
   
     arr = [23, 45, -34, 12, 0, 98,  

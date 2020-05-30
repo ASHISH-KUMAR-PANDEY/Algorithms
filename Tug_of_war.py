@@ -14,12 +14,9 @@ def TOWUtil(arr, n, curr_elements, no_of_selected_elements,
     no_of_selected_elements += 1
     curr_sum = curr_sum + arr[curr_position]  
     curr_elements[curr_position] = True
-  
-    # checks if a solution is formed  
+
     if (no_of_selected_elements == int(n / 2)): 
-          
-        # checks if the solution formed is better  
-        # than the best solution so far  
+  
         if (abs(int(Sum / 2) - curr_sum) < min_diff[0]): 
             min_diff[0] = abs(int(Sum / 2) - curr_sum) 
             for i in range(n): 

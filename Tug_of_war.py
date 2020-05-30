@@ -22,9 +22,7 @@ def TOWUtil(arr, n, curr_elements, no_of_selected_elements,
             for i in range(n): 
                 soln[i] = curr_elements[i] 
     else: 
-          
-        # consider the cases where current 
-        # element is included in the solution  
+
         TOWUtil(arr, n, curr_elements, no_of_selected_elements,  
                 soln, min_diff, Sum, curr_sum, curr_position + 1) 
   

@@ -51,9 +51,7 @@ def tugOfWar(arr, n):
     for i in range(n): 
         Sum += arr[i]  
         curr_elements[i] = soln[i] = False
-  
-    # Find the solution using recursive 
-    # function TOWUtil()  
+
     TOWUtil(arr, n, curr_elements, 0,  
             soln, min_diff, Sum, 0, 0)  
 

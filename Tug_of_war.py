@@ -1,22 +1,13 @@
-# function that tries every possible  
-# solution by calling itself recursively  
 def TOWUtil(arr, n, curr_elements, no_of_selected_elements,  
             soln, min_diff, Sum, curr_sum, curr_position): 
-      
-    # checks whether the it is going  
-    # out of bound  
+
     if (curr_position == n):  
         return
-  
-    # checks that the numbers of elements  
-    # left are not less than the number of 
-    # elements required to form the solution  
+
     if ((int(n / 2) - no_of_selected_elements) >  
                           (n - curr_position)): 
         return
-  
-    # consider the cases when current element  
-    # is not included in the solution  
+
     TOWUtil(arr, n, curr_elements, no_of_selected_elements,  
             soln, min_diff, Sum, curr_sum, curr_position + 1)  
   

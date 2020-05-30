@@ -25,12 +25,9 @@ def TOWUtil(arr, n, curr_elements, no_of_selected_elements,
 
         TOWUtil(arr, n, curr_elements, no_of_selected_elements,  
                 soln, min_diff, Sum, curr_sum, curr_position + 1) 
-  
-    # removes current element before returning 
-    # to the caller of this function  
+
     curr_elements[curr_position] = False
-  
-# main function that generate an arr  
+ 
 def tugOfWar(arr, n): 
       
     # the boolean array that contains the  

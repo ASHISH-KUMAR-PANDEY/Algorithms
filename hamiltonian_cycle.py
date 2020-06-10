@@ -3,32 +3,22 @@ class Graph():
         self.graph = [[0 for column in range(vertices)] 
                             for row in range(vertices)]  
         self.V = vertices  
-  
-    ''' Check if this vertex is an adjacent vertex  
-        of the previously added vertex and is not  
-        included in the path earlier '''
+
     def isSafe(self, v, pos, path):  
-        # Check if current vertex and last vertex  
-        # in path are adjacent  
+
         if self.graph[ path[pos-1] ][v] == 0:  
             return False
-  
-        # Check if current vertex not already in path  
+
         for vertex in path:  
             if vertex == v:  
                 return False
   
         return True
-  
-    # A recursive utility function to solve  
-    # hamiltonian cycle problem  
+
     def hamCycleUtil(self, path, pos):  
-  
-        # base case: if all vertices are  
-        # included in the path  
+ 
         if pos == self.V:  
-            # Last vertex must be adjacent to the  
-            # first vertex in path to make a cyle  
+
             if self.graph[ path[pos-1] ][ path[0] ] == 1:  
                 return True
             else:  

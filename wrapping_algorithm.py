@@ -4,10 +4,7 @@ class Point:
         self.y = y 
   
 def Left_index(points): 
-      
-    ''' 
-    Finding the left most point 
-    '''
+
     minn = 0
     for i in range(1,len(points)): 
         if points[i].x < points[minn].x: 
@@ -18,13 +15,7 @@ def Left_index(points):
     return minn 
   
 def orientation(p, q, r): 
-    ''' 
-    To find orientation of ordered triplet (p, q, r).  
-    The function returns following values  
-    0 --> p, q and r are colinear  
-    1 --> Clockwise  
-    2 --> Counterclockwise  
-    '''
+
     val = (q.y - p.y) * (r.x - q.x) - \ 
           (q.x - p.x) * (r.y - q.y) 
   
@@ -36,26 +27,18 @@ def orientation(p, q, r):
         return 2
   
 def convexHull(points, n): 
-      
-    # There must be at least 3 points  
+ 
     if n < 3: 
         return
-  
-    # Find the leftmost point 
+
     l = Left_index(points) 
   
     hull = [] 
-      
-    ''' 
-    Start from leftmost point, keep moving counterclockwise  
-    until reach the start point again. This loop runs O(h)  
-    times where h is number of points in result or output.  
-    '''
+
     p = l 
     q = 0
     while(True): 
-          
-        # Add current point to result  
+ 
         hull.append(p) 
   
         ''' 

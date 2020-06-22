@@ -15,9 +15,7 @@ class Graph():
     def minDistance(self, dist, sptSet): 
 
         min = sys.maxint 
-  
-        # Search not nearest vertex not in the  
-        # shortest path tree 
+
         for v in range(self.V): 
             if dist[v] < min and sptSet[v] == False: 
                 min = dist[v] 
